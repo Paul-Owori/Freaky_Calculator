@@ -20,17 +20,19 @@ body{
   background:black;
   padding:15px;
   text-align: center;
-  border-radius: 10px
+  border-radius: 10px;
 }
+
 [input type=text]{
 width:180px;
 padding:10px;
 font-size:22px;
-font-weight:bold;
+font-weight: bold;
 margin-top:100px;
 border-radius:5px;
 display: flex;
 }
+
 #rem{
   width:180px;
 }
