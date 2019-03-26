@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+    <meta charset="utf-8">
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <form name="cal" id="calc">
+        <input type="text" name="display" id="screen">
+        <br><br>
+
+        <div class="buttonz">
+          <input type="button" value="9" onclick="cal.display.value+='9'" id="9">
+          <input type="button" value="8" onclick="cal.display.value+='8'" id="8">
+          <input type="button" value="7" onclick="cal.display.value+='7'" id="7">
+          <input type="button" value="+" onclick="cal.display.value+='+'" id="plus">
+        </div>
+
+        <br><br>
+
+        <div class="buttonz">
+          <input type="button" value="6" onclick="cal.display.value+='6'" id="6">
+          <input type="button" value="5" onclick="cal.display.value+='5'" id="5">
+          <input type="button" value="4" onclick="cal.display.value+='4'" id="4">
+          <input type="button" value="-" onclick="cal.display.value+='-'" id="minus">
+        </div>
+
+        <br><br>
+
+        <div class="buttonz">
+          <input type="button" value="3" onclick="cal.display.value+='3'" id="3">
+          <input type="button" value="2" onclick="cal.display.value+='2'" id="2">
+          <input type="button" value="1" onclick="cal.display.value+='1'" id="1">
+          <input type="button" value="*" onclick="cal.display.value+='*'" id="stars">
+        </div>
+
+        <br><br>
+
+        <div class="buttonz">
+        <input type="button" value="0" onclick="cal.display.value+='0'" id="zero">
+        <input type="button" value="/" onclick="cal.display.value+='/'" id="slashd">
+        <input type="button" value="%" onclick="cal.display.value+='%'" id="modulo">
+        <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)" id="equal">
+        </div>
+
+
+        <br><br>
+        <input type="button" value ="DELETE" onclick ="cal.display.value= ''" id ="rem">
+      </form>
+    </div>
+  </body>
+</html>
